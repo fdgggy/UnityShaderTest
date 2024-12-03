@@ -6,7 +6,7 @@ Shader "Unity Shaders Book/Chapter 5/Simple Shader"  //shader name, 出现在mat
     {
         //_MainTex ("Texture", 2D) = "white" {}
     }
-    SubShader//子着色器，Unity会选择第一个能在目标平台上运行的SubShader，都不支持就会选择Fallback语义内的指定
+    SubShader//针对显卡A的子着色器，Unity会选择第一个能在目标平台上运行的SubShader，都不支持就会选择Fallback语义内的指定
     {
         //Tags { "RenderType"="Opaque" }  //用于所有Pass,在Pass内定义只会影响当前Pass. 告诉渲染引擎，如何何时渲染这个对象。只有特定的Tag只能在SubShader定义不能再Pass内定义。
 
