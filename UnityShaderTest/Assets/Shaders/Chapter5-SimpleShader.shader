@@ -17,11 +17,11 @@ Shader "Unity Shaders Book/Chapter 5/Simple Shader"  //shader name, 出现在mat
           #pragma vertex vert  //编译指令,为了告诉unity，顶点着色器和片元着色器的函数
           #pragma fragment frag
 
-          float4 vert(float4 v : POSITION) : SV_POSITION { //逐顶点执行
+          float4 vert(float4 v : POSITION) : SV_POSITION { //顶点着色器，逐顶点执行
               return UnityObjectToClipPos (v);//该顶点在裁剪空间中的位置 原版：mul (UNITY_MATRIX_MVP, v);
           }
 
-          fixed4 frag() : SV_Target { //把输出颜色存储到一个渲染目标中，默认是帧缓存
+          fixed4 frag() : SV_Target { //逐片元执行，片元着色器，把输出颜色存储到一个渲染目标中，默认是帧缓存
               return fixed4(1.0, 1.0, 1.0, 1.0); //颜色在[0,1]
           }
           
