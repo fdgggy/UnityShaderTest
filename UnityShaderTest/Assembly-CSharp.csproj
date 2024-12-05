@@ -46,7 +46,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <None Include="Assets\Shaders\Chapter6-DiffusePixelLevel.shader" />
+    <None Include="Assets\Shaders\Chapter6-SpecularBlinLevel.shader" />
+    <None Include="Assets\Shaders\Chapter6-SpecularVertexLevel.shader" />
+    <None Include="Assets\Shaders\Chapter6-DiffuseVertexLevel.shader" />
+    <None Include="Assets\Shaders\Chapter6-SpecularPixelLevel.shader" />
     <None Include="Assets\Shaders\Chapter5-SimpleShader.shader" />
+    <None Include="Assets\Shaders\Chapter6-HalfLambert.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.48f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
